@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./app.css"
+import 'bootstrap/dist/css/bootstrap.css';
+import Button from "react-bootstrap/Button";
+import React, { useState, useEffect } from 'react';
 function App() {
+  const [toDoThings,setDoThings]=useState(["jablko"])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="mainContainer">
+      <h1 className="title-heading">ToDoList</h1>
+      <div className="paragraph-and-input-container">
+        <p className="add-paragraph">Add thing to your list</p>
+        <input className="new-thingToDoInput" type="text" />
+        <Button variant="dark">
+            add
+        </Button>
+      </div>
+<div className="container-for-adding-elements">
+{toDoThings.filter((value)=>{
+  return <p>value</p>
+})}
+</div>
     </div>
+    </>
   );
 }
 
