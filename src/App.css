@@ -41,6 +41,7 @@ text-align: center;
     align-items: center;
     color: white;
     font-size: 25px;
+    border-radius: 15px;
 }
 .value-and-button-for-delete{
   display: flex;
